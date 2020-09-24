@@ -44,7 +44,7 @@
 [[groups]]
   id = "miners"
   [groups.resources]
-    memory = "12000Mi"
+    memory = "14000Mi"
     cpu = "1000m"
   [groups.instances]
     count = 2
@@ -65,5 +65,5 @@
   [groups.run]
     [groups.run.test_params]
       role = "client"
-      deals = "20"
+      deals = "5"
       deal_mode = "concurrent"
