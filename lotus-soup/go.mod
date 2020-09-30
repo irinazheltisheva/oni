@@ -37,7 +37,7 @@ require (
 	github.com/multiformats/go-multiaddr v0.3.1
 	github.com/multiformats/go-multiaddr-net v0.2.0
 	github.com/stretchr/objx v0.2.0 // indirect
-	github.com/testground/sdk-go v0.2.4
+	github.com/testground/sdk-go v0.2.6-0.20200930113112-e962ea1651f7
 	go.opencensus.io v0.22.4
 	golang.org/x/exp v0.0.0-20200224162631-6cc2880d07d6 // indirect
 	golang.org/x/lint v0.0.0-20200302205851-738671d3881b // indirect
