@@ -67,7 +67,7 @@ jobs:
           command: wget https://gist.github.com/nonsense/5fbf3167cac79945f658771aed32fc44/raw/2e7ced2b1d0ca54033be57299e3fefb840958dfb/testground-3ee0dae -O ~/testground-cli && chmod +x ~/testground-cli
       - run:
           name: "prepare .env.toml"
-          command: pushd lotus-soup && mkdir -p $HOME/testground && cp env-ci.toml $HOME/testground/.env.toml && echo 'endpoint="'$endpoint'"' >> $HOME/testground/.env.toml && echo 'token="'$token'"' >> $HOME/testground/.env.toml
+          command: pushd lotus-soup && mkdir -p $HOME/testground && cp env-ci.toml $HOME/testground/.env.toml && echo 'endpoint="'$endpoint'"' >> $HOME/testground/.env.toml && echo 'token="'$token'"' >> $HOME/testground/.env.toml && echo 'user="circleci (filecoin-project/oni/'$CIRCLE_BRANCH') <https://github.com/filecoin-project/oni/commit/'$CIRCLE_SHA1'>"'
       - run:
           name: "prepare testground home dir"
           command: mkdir -p $HOME/testground/plans && mv lotus-soup $HOME/testground/plans/
